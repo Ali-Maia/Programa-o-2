@@ -4,19 +4,33 @@ contatos={}
 #metodo é um verbo
 #atributo é um substantivo
 class Agenda():
-    def __init__(self,contatos,agenda):
-        self.contatos=contatos
-        self.agenda=agenda
+    #def __init__(self,contatos,agenda):
+        #self.contatos=contatos
+       #self.agenda=agenda
+        #self.agenda=[]
     #atributos
     #contatos
     #agenda 
     def adicionar(self):
-        pass
+        self.contatos={}
+        self.contatos["nome"]=input("Digite o nome comleto: ")
+        self.contatos["telefone"]=input("Digite o telefone: ")
+        self.contatos["email"]=input("Digite o email: ")
+        agenda.append(self.contatos)
+
     def exluir(self):
         pass
     def listar(self):
-        pass
+        for index, self.contatos in enumerate(agenda):
+            print("Contato "+str(index)+":")
+            print("Nome completo: "+self.contatos["nome"])
+            print("Email: "+self.contatos["email"])
+            print("Telefone: "+self.contatos["telefone"])
+    
     def modificar (self):
+        pass
+
+    def encontrar (self):
         pass
     
     #metodos
@@ -55,3 +69,6 @@ class Contato():
 
 contato1=Contato("rodrigo","987645327","rogrigo@ufpa.com")
 contato1.informacoes()
+contato2=Agenda()
+contato2.adicionar()
+contato2.listar()
